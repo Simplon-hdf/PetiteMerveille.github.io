@@ -25,7 +25,7 @@
 <body class=".lorauniquifier bg-[#F5F4F6]">
     <header>
         <nav class="grid py-5 bg-[#CD8465] fixed top-0 w-full opacity-80 ">
-          
+
             <div class="hidden mt-2 mr-4 sm:inline-block">
                 <span></span>
             </div>
@@ -44,7 +44,7 @@
                         clip-rule="evenodd"></path>
                 </svg>
             </button>
-            
+
             <div class=" flex justify-center items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                 <ul class="flex justify-center items-center flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                     <li>
@@ -81,49 +81,57 @@
                     </li>
                 </ul>
             </div>
-            
+
         </nav>
     </header>
     <main>
         <section class="flex flex-col justify-center items-center mt-10 pt-40">
             <h4 class="text-3xl font-bold">CONTACT</h4>
             <hr class="border border-2 w-1/4 mt-4">
-          </section>
-        <section class="grid grid-cols-5 gap-12 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4 mb-96 mt-96">
-            
-                <h2 class="text-3xl font-bold text-center">Coordonnées :</h2>
-                <p class="text-2xl">Adresse :</p>
-                <p class="text-2xl">Téléphone :</p>
-                <p class="text-2xl">Email :</p>
-                <p class="text-2xl">Disponibilités :</p>
-            
+        </section>
+        <section class="grid grid-cols-3 border border-2 border-gray-300 mt-64 mb-64 p-10">
+            <section class="col-start-1 col-span-1  ">
+                <h2 class="text-3xl font-bold text-center underline mb-16">Coordonnées :</h2>
+                <p class="text-2xl mb-8 font-bold">Adresse :
+                <p class="text-2xl mb-10">9 rue Guy Mollet, 62800 Liévin</p>                
+                <p class="text-2xl mb-8 font-bold">Téléphone :</p>
+                <p class="text-2xl mb-10">03.21.36.56.85</p>
+                <p class="text-2xl mb-8 font-bold">Email :</p>
+                <p class="text-2xl mb-10">sarah.robine@gmail.com</p>
+                <p class="text-2xl mb-8 font-bold">Disponibilités :</p>
+                <p class="text-2xl mb-10">Du lundi au vendredi de 10h à 18h</p>
+            </section>
+            <section class="col-start-2 col-end-3 col-span-1 mr-6 -ml-6">
+
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19755.386659453547!2d2.771126736257093!3d50.426514663389746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd3075637e287d%3A0x559e03be4a27e27f!2zU2hhZMOpIFNob290aW5nIFBob3RvIC0gU3DDqWNpYWxpc8OpIELDqWLDqSwgZ3Jvc3Nlc3NlLCBmYW1pbGxl!5e0!3m2!1sfr!2sfr!4v1714431032560!5m2!1sfr!2sfr"
-                    width="1800" height="1130" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" class="-ml-6 -mr-6"></iframe>
-            
+                    width="100%" height="100%" frameborder="0" class="w-full h-full" style="border:0;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section class="col-start-3 col-span-1">
+                <form>
 
-            <form class="grid col-span-1 col-start-4 col-end-5 text-center border border-gray-900 mr-12 -ml-12 pr-6 pl-6 pb-6 pt-6">
-                <label for="nom" class="block mb-2 text-2xl">Nom :</label>
-                <input type="text" id="nom" name="nom" required
-                    class="w-full p-2 border border-gray-300 rounded-md mb-8">
-                <label for="email" class="block mb-2 text-2xl">Adresse e-mail :</label>
-                <input type="email" id="email" name="email" required
-                    class="w-full p-2 border border-gray-300 rounded-md mb-8">
-                <label for="telephone" class="block mb-2 text-2xl">Numéro de téléphone :</label>
-                <input type="tel" id="telephone" name="telephone"
-                    class="w-full p-2 border border-gray-300 rounded-md mb-8">
-                <label for="sujet" class="block mb-2 text-2xl">Sujet :</label>
-                <input type="text" id="sujet" name="sujet" required
-                    class="w-full p-2 border border-gray-300 rounded-md mb-8">
-                <label for="message" class="block mb-2 text-2xl">Message :</label>
-                <textarea id="message" name="message" rows="5" required
-                    class="w-full p-2 border border-gray-300 rounded-md mb-"></textarea>
-                <button type="submit"
-                    class="bg-green-500 text-white px-4 py-4 ml-28 mr-28 hover:bg-green-600">Envoyer</button>
-            </form>            
-        
-            
+                    <label for="nom" class="block mb-2 text-2xl">Nom :</label>
+                    <input type="text" id="nom" name="nom" required
+                        class="w-full p-2 border border-gray-300 rounded-md mb-8">
+                    <label for="email" class="block mb-2 text-2xl">Adresse e-mail :</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full p-2 border border-gray-300 rounded-md mb-8">
+                    <label for="telephone" class="block mb-2 text-2xl">Numéro de téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone"
+                        class="w-full p-2 border border-gray-300 rounded-md mb-8">
+                    <label for="sujet" class="block mb-2 text-2xl">Sujet :</label>
+                    <input type="text" id="sujet" name="sujet" required
+                        class="w-full p-2 border border-gray-300 rounded-md mb-8">
+                    <label for="message" class="block mb-2 text-2xl">Message :</label>
+                    <textarea id="message" name="message" rows="5" required
+                        class="w-full p-2 border border-gray-300 rounded-md mb-"></textarea>
+                    <button type="submit"
+                        class="bg-green-500 text-white px-4 py-2 ml-52 rounded-md hover:bg-green-600">Envoyer</button>
+                </form>
+            </section>
+
+
         </section>
     </main>
     <footer class="bg-[#CD8465] flex space-between bottom-0 w-full">
@@ -162,9 +170,9 @@
                 </section>
 
                 <section class="pl-4">
-                    <p class="font-semibold text-2xl text-gray-900 ">Industries</p>
+                    
 
-                    <section class="flex flex-col items-start mt-5 space-y-2">
+                    <section class="flex flex-col items-start mt-12 space-y-2">
                         <a href="/pages/tarifs.html"
                             class="text-white text-xl transition-colors duration-300 hover:underline hover:text-blue-500">Détails
                             & E-Commerce</a>
@@ -177,23 +185,25 @@
 
             <hr class="my-6 border-gray-200 md:my-8">
 
-            
 
-                <section class="flex space-x-2 px-16">
-                    <a href="https://www.facebook.com" target="_blank"><img src="../assets/img/icone/fb24.png"
-                            class="w-10" alt="Facebook"></a>
-                    <a href="https://twitter.com" target="_blank"><img src="../assets/img/icone/twitter.png" class="w-10" alt="Twitter"></a>
-                    <a href="https://www.instagram.com" target="_blank"><img
-                            src="../assets/img/icone/Instagram_logo_2016.svg.png" class="w-10" alt="Instagram"></a>
-                    <a href="https://www.linkedin.com" target="_blank"><img
-                            src="../assets/img/icone/Linkedin-Logo-PNG-Photos.png" class="w-10" alt="Linkedin"></a>
-                    <a href="#" id="lienRetour" title="Revenir en haut de la page"
-                        class="fixed bottom-4 right-4 z-50 bg-[#C2C2C2] hover:bg-[#EDE9E9] text-white py-2 px-4 rounded">^</a>
-                </section>
-            
+
+            <section class="flex justify-evenly items-center px-16">
+                <a href="https://www.facebook.com" target="_blank"><img src="../assets/img/icone/fb24.png" class="w-10"
+                        alt="Facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img src="../assets/img/icone/twitter.png" class="w-10"
+                        alt="Twitter"></a>
+                <a href="https://www.instagram.com" target="_blank"><img
+                        src="../assets/img/icone/Instagram_logo_2016.svg.png" class="w-10" alt="Instagram"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img
+                        src="../assets/img/icone/Linkedin-Logo-PNG-Photos.png" class="w-10" alt="Linkedin"></a>
+                <a href="#" id="lienRetour" title="Revenir en haut de la page"
+                    class="fixed bottom-4 right-4 z-50 bg-[#C2C2C2] hover:bg-[#EDE9E9] text-white py-2 px-4 rounded">^</a>
+            </section>
+
         </section>
 
     </footer>
 </body>
 <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+
 </html>
