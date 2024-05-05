@@ -97,58 +97,45 @@
             </nav>
         </header>
         <main>
-            <section
-                     class="flex flex-col justify-center items-center mt-10 pt-40">
-                <h4 class="text-3xl font-bold">CONTACT</h4>
-                <hr class="border border-2 w-1/4 mt-4">
-            </section>
-            <section
-                     class="grid grid-cols-3 border border-2 border-gray-300 mt-64 mb-64 p-10 ml-20 mr-20">
-                <section class="col-start-1 col-span-1  ">
+            <section class="grid grid-cols-1 md:grid-cols-3 border border-2 border-gray-300 mt-64 mb-64 p-10 ml-12 mr-12 rounded-lg">
+                <section class="col-span-1 md:col-span-1">
                     <h2 class="text-3xl font-bold text-center underline mb-16">
                         Coordonnées :</h2>
-                    <p class="text-2xl mb-8 font-bold">Adresse :
-                    <p class="text-2xl mb-10">9 rue Guy Mollet, 62800 Liévin</p>
-                    <p class="text-2xl mb-8 font-bold">Téléphone :</p>
-                    <p class="text-2xl mb-10">03.21.36.56.85</p>
+                    <p class="text-2xl mb-8 font-bold">Adresse :</p>
+                    <p class="text-2xl mb-10 ml-2">9 rue Guy Mollet, 62800 Liévin</p>
+                    <p class="text-2xl mb-8 font-bold">Téléphone :</p>
+                    <p class="text-2xl mb-10 ml-2">03.21.36.56.85</p>
                     <p class="text-2xl mb-8 font-bold">Email :</p>
-                    <p class="text-2xl mb-10">sarah.robine@gmail.com</p>
+                    <p class="text-2xl mb-10 ml-2 text-wrap">sarah.robine@gmail.com</p>
                     <p class="text-2xl mb-8 font-bold">Disponibilités :</p>
-                    <p class="text-2xl mb-10">Du lundi au vendredi de 10h à 18h
-                    </p>
+                    <p class="text-2xl mb-10 ml-2">Du lundi au vendredi de 10h à 18h</p>
                 </section>
-                <section class="col-start-2 col-end-3 col-span-1 mr-6 -ml-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19755.386659453547!2d2.771126736257093!3d50.426514663389746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd3075637e287d%3A0x559e03be4a27e27f!2zU2hhZMOpIFNob290aW5nIFBob3RvIC0gU3DDqWNpYWxpc8OpIELDqWLDqSwgZ3Jvc3Nlc3NlLCBmYW1pbGxl!5e0!3m2!1sfr!2sfr!4v1714431032560!5m2!1sfr!2sfr"
-                            width="100%" height="100%" frameborder="0"
-                            class="w-full h-full" style="border:0;"
-                            allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <section class="col-span-1 md:col-span-1 mb-2 -ml-4 mr-4">
+                    <div class="w-full h-full">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19755.386659453547!2d2.771126736257093!3d50.426514663389746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd3075637e287d%3A0x559e03be4a27e27f!2zU2hhZMOpIFNob290aW5nIFBob3RvIC0gU3DDqWNpYWxpc8OpIELDqWLDqSwgZ3Jvc3Nlc3NlLCBmYW1pbGxl!5e0!3m2!1sfr!2sfr!4v1714431032560!5m2!1sfr!2sfr"
+                            class="w-full h-full" frameborder="0" style="border:0;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </section>
-                <section class="col-start-3 col-span-1">
+                <section class="col-span-1 ml-4">
                     <form>
-                        <label for="nom" class="block mb-2 text-2xl">Nom
-                            :</label>
+                        <label for="nom" class="block mb-2 text-2xl">Nom :</label>
                         <input type="text" id="nom" name="nom" required
-                               class="w-full p-2 border border-gray-300 rounded-md mb-8">
-                        <label for="email" class="block mb-2 text-2xl">Adresse
-                            e-mail :</label>
+                            class="w-full p-2 border border-gray-300 rounded-md mb-8">
+                        <label for="email" class="block mb-2 text-2xl">Adresse e-mail :</label>
                         <input type="email" id="email" name="email" required
-                               class="w-full p-2 border border-gray-300 rounded-md mb-8">
-                        <label for="telephone"
-                               class="block mb-2 text-2xl">Numéro de téléphone
-                            :</label>
+                            class="w-full p-2 border border-gray-300 rounded-md mb-8">
+                        <label for="telephone" class="block mb-2 text-2xl">Numéro de téléphone :</label>
                         <input type="tel" id="telephone" name="telephone"
-                               class="w-full p-2 border border-gray-300 rounded-md mb-8">
-                        <label for="sujet" class="block mb-2 text-2xl">Sujet
-                            :</label>
+                            class="w-full p-2 border border-gray-300 rounded-md mb-8">
+                        <label for="sujet" class="block mb-2 text-2xl">Sujet :</label>
                         <input type="text" id="sujet" name="sujet" required
-                               class="w-full p-2 border border-gray-300 rounded-md mb-8">
-                        <label for="message" class="block mb-2 text-2xl">Message
-                            :</label>
+                            class="w-full p-2 border border-gray-300 rounded-md mb-8">
+                        <label for="message" class="block mb-2 text-2xl">Message :</label>
                         <textarea id="message" name="message" rows="5" required
-                                  class="w-full p-2 border border-gray-300 rounded-md mb-"></textarea>
+                            class="w-full p-2 border border-gray-300 rounded-md mb-"></textarea>
                         <button type="submit"
-                                class="bg-gray-500 text-white px-4 py-2 ml-52 rounded-md hover:bg-gray-300">Envoyer</button>
+                            class="bg-gray-500 text-white px-4 py-2 ml-0 md:ml-52 rounded-md hover:bg-gray-300">Envoyer</button>
                     </form>
                 </section>
             </section>
