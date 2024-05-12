@@ -1,195 +1,206 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head class=".lorauniquifier">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Acceuil</title>
-        <link rel="stylesheet" href="../styles.css">
-        <link rel="shortcut icon" href="./assets/img/logo/sarah-robine4.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Sevillana&family=Space+Grotesk:wght@300..700&display=swap"
-              rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            background: '#1E1E1E',
-                            white: '#FFFFFF',
-                            brown: '#96583F',
-                        }
-                    }
-                }
+  <head class=".lorauniquifier">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./assets/img/logo/sarah-robine4.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Sevillana&family=Space+Grotesk:wght@300..700&display=swap"
+          rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#1E1E1E',
+              white: '#FFFFFF',
+              brown: '#96583F',
             }
-        </script>
-    </head>
-    <body class="lorauniquifier bg-[#F5F4F6]">
-        <header class="lorauniquifier">
-            <!-- <figure>
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="lorauniquifier bg-[#F5F4F6]">
+    <header class="lorauniquifier">
+      <!-- <figure>
                 <img class="w-full" src="../assets/img/banière/banniere_7.png"
                     alt="banniere-header">
             </figure> -->
-            <nav class="bg-[#CD8465] fixed top-0 w-full opacity-90 md:flex md:justify-between lg:justify-center z-10">
-                <div class="flex justify-between items-center mx-4">
-                    <a href="../index.html"><img class="h-16 w-16"
-                            src="../assets/img/logo/sarah-robine4.png"
-                            alt="logo"></a>
-                <button data-collapse-toggle="mobile-menu-2" type="button"
-                        class="inline-flex items-center p-2 ml-1 text-sm text-white rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 hover:bg-neutral-500 focus:ring-gray-600"
-                        aria-controls="mobile-menu-2" aria-expanded="true">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <svg class="hidden w-6 h-6" fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-                </div>
-                    <ul
-                        class="flex justify-center items-center flex-col mt-4 font-medium lg:flex-row lg:space-x-16 lg:mt-0" id="mobile-menu-2">
-                        
-                        <li>
-                            <a href="../index.html"
-                            class="block py-2 pl-3 pr-4 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 text-[#EFF1ED] lg:hover:text-white hover:bg-stone-500 hover:text-neutral-300 lg:hover:bg-transparent"
-                            aria-current="page">Accueil</a>
-                        </li>
-                        <li>
-                            <a href="../pages/studio.html"
-                            class="block py-2 pl-3 pr-4 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 text-[#EFF1ED] lg:hover:text-white hover:bg-stone-500 hover:text-neutral-300 lg:hover:bg-transparent">Le
-                                studio</a>
-                        </li>
-                        <li>
-                            <a href="../pages/galerie.html"
-                            class="block py-2 pl-3 pr-4 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 text-[#EFF1ED] lg:hover:text-white hover:bg-stone-500 hover:text-neutral-300 lg:hover:bg-transparent">Galerie</a>
-                        </li>
-                        <li>
-                            <a href="../pages/tarifs.html"
-                            class="block py-2 pl-3 pr-4 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 text-[#EFF1ED] lg:hover:text-white hover:bg-stone-500 hover:text-neutral-300 lg:hover:bg-transparent">Tarifs</a>
-                        </li>
-                        <li>
-                            <a href="../pages/blog.html"
-                            class="block py-2 pl-3 pr-4 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 text-[#EFF1ED] lg:hover:text-white hover:bg-stone-500 hover:text-neutral-300 lg:hover:bg-transparent">Blog</a>
-                        </li>
-                        <li>
-                            <a href="../pages/about.html"
-                            class="block py-2 pl-3 pr-4 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 text-[#EFF1ED] lg:hover:text-white hover:bg-stone-500 hover:text-neutral-300 lg:hover:bg-transparent">A
-                                propos</a>
-                        </li>
-                        <li>
-                            <a href="../pages/contact.html"
-                            class="block py-2 pl-3 pr-4 text-white hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 text-[#EFF1ED] lg:hover:text-white hover:bg-stone-500 hover:text-neutral-300 lg:hover:bg-transparent">Contact</a>
-                        </li>
-                    </ul>
-            </nav>
-        </header>
-        <main>
-          <figure class="relative">
-            <div class="w-full h-full pt-2">
-              <img class="w-screen h-full" src="./assets/img/banière/banniere-6.jpg" alt="img-banniere">
-              <div class="absolute top-1/2 left-0 transform -translate-y-1/2 flex items-start justify-center w-1/2 gap-8">
-                <a href="./pages/contact.html"><button class="ml-20 mb-10 text-white py-2 px-4 rounded focus:outline-none bg-amber-800 rounded-lg hover:bg-[#CD8465] focus:ring focus:ring-gray-300 focus:ring-opacity-80">CONTACT</button></a>
-                <a href="tel:03.21.36.56.85"><button class="focus:outline-none bg-amber-800 rounded-lg hover:bg-[#CD8465] focus:ring focus:ring-gray-300 focus:ring-opacity-80 text-white py-2 px-4 rounded">TELEPHONE</button></a>
-              </div>
-            </div>
-          </figure>
-          <!-- <section class="flex flex-col justify-center items-center mt-10 pt-40">
+      <nav
+           class="bg-[#CD8465] fixed top-0 w-full opacity-90 md:flex md:justify-between lg:justify-center z-10">
+        <div class="flex justify-between items-center mx-4">
+          <a href="./index.html"><img class="h-16 w-16"
+                 src="./assets/img/logo/sarah-robine4.png" alt="logo"></a>
+          <button data-collapse-toggle="mobile-menu-2" type="button"
+                  class="inline-flex items-center p-2 ml-1 text-sm text-white rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 hover:bg-neutral-500 focus:ring-gray-600"
+                  aria-controls="mobile-menu-2" aria-expanded="true">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+            </svg>
+            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="flex justify-center items-center flex-col mt-4 font-medium lg:flex-row lg:space-x-16 lg:mt-0"
+            id="mobile-menu-2">
+          <li>
+            <a href="./index.html"
+               class="block py-2 pl-3 pr-4 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 text-[#EFF1ED] lg:hover:text-white hover:bg-stone-500 hover:text-neutral-300 lg:hover:bg-transparent"
+               aria-current="page">Accueil</a>
+          </li>
+          <li>
+            <a href="./pages/studio.html"
+               class="block py-2 pl-3 pr-4 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 text-[#EFF1ED] lg:hover:text-white hover:bg-stone-500 hover:text-neutral-300 lg:hover:bg-transparent">Le
+              studio</a>
+          </li>
+          <li>
+            <a href="./pages/galerie.html"
+               class="block py-2 pl-3 pr-4 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 text-[#EFF1ED] lg:hover:text-white hover:bg-stone-500 hover:text-neutral-300 lg:hover:bg-transparent">Galerie</a>
+          </li>
+          <li>
+            <a href="./pages/tarifs.html"
+               class="block py-2 pl-3 pr-4 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 text-[#EFF1ED] lg:hover:text-white hover:bg-stone-500 hover:text-neutral-300 lg:hover:bg-transparent">Tarifs</a>
+          </li>
+          <li>
+            <a href="./pages/blog.html"
+               class="block py-2 pl-3 pr-4 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 text-[#EFF1ED] lg:hover:text-white hover:bg-stone-500 hover:text-neutral-300 lg:hover:bg-transparent">Blog</a>
+          </li>
+          <li>
+            <a href="./pages/about.html"
+               class="block py-2 pl-3 pr-4 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 text-[#EFF1ED] lg:hover:text-white hover:bg-stone-500 hover:text-neutral-300 lg:hover:bg-transparent">A
+              propos</a>
+          </li>
+          <li>
+            <a href="./pages/contact.html"
+               class="block py-2 pl-3 pr-4 text-white hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 text-[#EFF1ED] lg:hover:text-white hover:bg-stone-500 hover:text-neutral-300 lg:hover:bg-transparent">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <figure class="relative">
+        <div class="w-full h-full pt-2">
+          <img class="w-screen h-full" src="./assets/img/banière/banniere-6.jpg"
+               alt="img-banniere">
+          <div
+               class="absolute top-1/2 left-0 transform -translate-y-1/2 flex items-start justify-center w-1/2 gap-8">
+            <a href="./pages/contact.html"><button
+                      class="ml-20 mb-10 text-white py-2 px-4 rounded focus:outline-none bg-amber-800 rounded-lg hover:bg-[#CD8465] focus:ring focus:ring-gray-300 focus:ring-opacity-80">CONTACT</button></a>
+            <a href="tel:03.21.36.56.85"><button
+                      class="focus:outline-none bg-amber-800 rounded-lg hover:bg-[#CD8465] focus:ring focus:ring-gray-300 focus:ring-opacity-80 text-white py-2 px-4 rounded">TELEPHONE</button></a>
+          </div>
+        </div>
+      </figure>
+      <!-- <section class="flex flex-col justify-center items-center mt-10 pt-40">
             <h4 class="text-3xl font-bold">ACCUEIL</h4>
             <hr class="border border-2 w-1/4 mt-4">
           </section> -->
-          <section class="flex flex-col md:flex-row container mx-auto mt-10 pt-20">
-            <figure class="md:w-1/2">
-              <img class="w-full" src="./assets/img/img_studio/studio_1.jpg" alt="studio"/>
-            </figure>
-            <div class="md:w-1/2 md:ml-10 md:flex md:flex-col md:justify-center">
-              <p class="text-16px text-justify pt-4 md:pt-0">Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-          </section>
-          </section>
-          <p class="mt-20 mb-20 container mx-auto text-center">Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Curabitur efficitur ultrices
-            pretium. Proin sit amet odio eget dolor aliquet volutpat. Duis ac arcu nec
-            nulla vehicula tincidunt. Quisque dignissim pretium urna vitae rutrum.
-            Suspendisse ipsum metus, elementum eget lacinia eu, viverra eget mauris.
-            Vivamus facilisis eu elit nec tristique. Ut eu rutrum velit. Praesent sit
-            amet sem et felis tempor ultricies. Sed ex enim, gravida tristique gravida
-            nec, pellentesque sit amet lectus. Suspendisse potenti. Quisque lacinia
-            lobortis lectus non pulvinar. In erat tellus, bibendum eu cursus quis,
-            porttitor convallis leo. In pulvinar mi rhoncus porttitor sagittis.
-            Vivamus a ornare erat. Praesent interdum mauris sit amet ullamcorper
-            pharetra.</p>
-            <section class="grid md:grid-cols-3 gap-14 container mx-auto mt-10">
-              <div class="md:col-start-1 md:col-end-2">
-                <figure>
-                  <img class="rounded-full w-80 mx-auto" src="./assets/img/img_accueil/image_accueil_1.jpg" alt="image_accueil_1"/>
-                </figure>
-                <div>
-                  <h3 class="text-center text-3xl font-bold pt-10">AU STUDIO</h3>
-                  <p class="mt-4 md:mt-8 text-justify">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Praesent auctor dignissim nulla, ut fringilla elit
-                    venenatis ut. Curabitur nisi nibh, dapibus sed posuere et, posuere non
-                    felis. Aenean quis tellus sed ligula commodo tempus non vel velit.
-                    Nulla a condimentum urna. Aenean id semper sem, laoreet auctor metus.
-                    Aenean ultrices.</p>
-                </div>
-              </div>
-            
-              <div class="md:col-start-2 md:col-end-3">
-                <figure>
-                  <img class="rounded-full w-80 mx-auto" src="./assets/img/img_accueil/image_accueil_2.jpg" alt="image_accueil_2"/>
-                </figure>
-                <div>
-                  <h3 class="text-center text-3xl font-bold pt-10">A LA MAISON</h3>
-                  <p class="mt-4 md:mt-8 text-justify">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Pellentesque faucibus nulla sapien, non hendrerit sem
-                    vulputate eget. Aenean maximus sagittis eros. In vel nibh tincidunt,
-                    malesuada ex eu, sollicitudin est. Morbi gravida molestie mi et
-                    aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Morbi nec velit eget metus vestibulum.</p>
-                </div>
-              </div>
-              
-              <div class="md:col-start-3 md:col-end-4">
-                <figure>
-                  <img class="rounded-full w-80 mx-auto" src="./assets/img/img_accueil/image_accueil_3.jpg" alt="image_accueil_3"/>
-                </figure>
-                <div>
-                  <h3 class="text-center text-3xl font-bold pt-10">A L'EXTERIEUR</h3>
-                  <p class="mt-4 md:mt-8 text-justify">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Sed vel magna eget erat mollis lacinia nec vitae sem.
-                    Sed viverra velit at enim interdum, eu iaculis neque consectetur. In
-                    hac habitasse platea dictumst. Suspendisse potenti. Sed et nisl vel
-                    nisl facilisis interdum sed sit amet urna. Nunc elementum dolor ut
-                    ante consectetur fringilla.</p>
-                </div>
-              </div>
-            </section>
-            <section class="grid justify-items-center mt-28 bg-gray-200 mb-40">
-              <h1 class="pt-12 text-center font-bold text-3xl">Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit.</h1>
-              <p class=" w-2/3 mt-12 text-center text-black ">Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit. Quisque gravida
-                  ullamcorper urna, ac mollis ante suscipit ut. Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit. Pellentesque eu
-                  augue sagittis, hendrerit urna id, suscipit elit. Sed.</p>
-              <section class="flex items-center justify-center ">
-                  <button
-                          class="mb-12 mt-12 w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-amber-800 rounded-lg hover:bg-amber-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
-                      Lorem ipsum dolor sit </button>
-              </section>
-          </section>
-        </main>
+      <section class="flex flex-col md:flex-row container mx-auto mt-10 pt-20">
+        <figure class="md:w-1/2">
+          <img class="w-full" src="./assets/img/img_studio/studio_1.jpg"
+               alt="studio" />
+        </figure>
+        <div class="md:w-1/2 md:ml-10 md:flex md:flex-col md:justify-center">
+          <p class="text-16px text-justify pt-4 md:pt-0">Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+        </div>
+      </section>
+      </section>
+      <p class="mt-20 mb-20 container mx-auto text-center">Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Curabitur efficitur ultrices pretium.
+        Proin sit amet odio eget dolor aliquet volutpat. Duis ac arcu nec nulla
+        vehicula tincidunt. Quisque dignissim pretium urna vitae rutrum.
+        Suspendisse ipsum metus, elementum eget lacinia eu, viverra eget mauris.
+        Vivamus facilisis eu elit nec tristique. Ut eu rutrum velit. Praesent
+        sit amet sem et felis tempor ultricies. Sed ex enim, gravida tristique
+        gravida nec, pellentesque sit amet lectus. Suspendisse potenti. Quisque
+        lacinia lobortis lectus non pulvinar. In erat tellus, bibendum eu cursus
+        quis, porttitor convallis leo. In pulvinar mi rhoncus porttitor
+        sagittis. Vivamus a ornare erat. Praesent interdum mauris sit amet
+        ullamcorper pharetra.</p>
+      <section class="grid md:grid-cols-3 gap-14 container mx-auto mt-10">
+        <div class="md:col-start-1 md:col-end-2">
+          <figure>
+            <img class="rounded-full w-80 mx-auto"
+                 src="./assets/img/img_accueil/image_accueil_1.jpg"
+                 alt="image_accueil_1" />
+          </figure>
+          <div>
+            <h3 class="text-center text-3xl font-bold pt-10">AU STUDIO</h3>
+            <p class="mt-4 md:mt-8 text-justify">Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Praesent auctor dignissim nulla, ut
+              fringilla elit venenatis ut. Curabitur nisi nibh, dapibus sed
+              posuere et, posuere non felis. Aenean quis tellus sed ligula
+              commodo tempus non vel velit. Nulla a condimentum urna. Aenean id
+              semper sem, laoreet auctor metus. Aenean ultrices.</p>
+          </div>
+        </div>
+        <div class="md:col-start-2 md:col-end-3">
+          <figure>
+            <img class="rounded-full w-80 mx-auto"
+                 src="./assets/img/img_accueil/image_accueil_2.jpg"
+                 alt="image_accueil_2" />
+          </figure>
+          <div>
+            <h3 class="text-center text-3xl font-bold pt-10">A LA MAISON</h3>
+            <p class="mt-4 md:mt-8 text-justify">Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Pellentesque faucibus nulla sapien,
+              non hendrerit sem vulputate eget. Aenean maximus sagittis eros. In
+              vel nibh tincidunt, malesuada ex eu, sollicitudin est. Morbi
+              gravida molestie mi et aliquet. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Morbi nec velit eget metus
+              vestibulum.</p>
+          </div>
+        </div>
+        <div class="md:col-start-3 md:col-end-4">
+          <figure>
+            <img class="rounded-full w-80 mx-auto"
+                 src="./assets/img/img_accueil/image_accueil_3.jpg"
+                 alt="image_accueil_3" />
+          </figure>
+          <div>
+            <h3 class="text-center text-3xl font-bold pt-10">A L'EXTERIEUR</h3>
+            <p class="mt-4 md:mt-8 text-justify">Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Sed vel magna eget erat mollis
+              lacinia nec vitae sem. Sed viverra velit at enim interdum, eu
+              iaculis neque consectetur. In hac habitasse platea dictumst.
+              Suspendisse potenti. Sed et nisl vel nisl facilisis interdum sed
+              sit amet urna. Nunc elementum dolor ut ante consectetur fringilla.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="grid justify-items-center mt-28 bg-gray-200 mb-40">
+        <h1 class="pt-12 text-center font-bold text-3xl">Lorem ipsum dolor sit
+          amet consectetur adipisicing elit.</h1>
+        <p class=" w-2/3 mt-12 text-center text-black ">Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Quisque gravida ullamcorper urna,
+          ac mollis ante suscipit ut. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Pellentesque eu augue sagittis, hendrerit urna id,
+          suscipit elit. Sed.</p>
+        <section class="flex items-center justify-center ">
+          <button
+                  class="mb-12 mt-12 w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-amber-800 rounded-lg hover:bg-amber-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+            Lorem ipsum dolor sit </button>
+        </section>
+      </section>
+    </main>
     <footer class="bg-[#CD8465] flex space-between bottom-0 w-full mt-36">
       <section class="container px-6 py-12 mx-auto">
         <section
@@ -229,7 +240,7 @@
           </section>
         </section>
         <hr class="my-6 border-gray-200 md:my-8" />
-        <section class=" flex justify-evenly items-center px-16">
+        <section class="flex justify-evenly items-center px-16">
           <a href="https://www.facebook.com/profile.php?id=61559057137855"
              target="_blank"><img src="./assets/img/icone/fb24.png" class="w-10"
                  alt="Facebook"></a>
